@@ -19,13 +19,11 @@ const WithContext = ({ pageContext }) => {
 
   return (
     <Layout>
-      <section>
-        {editableAreas &&
-          editableAreas.map(area => (
-            <EditableArea key={area.identifier} area={area} />
-          ))}
-        <Link to="/">Go back to the homepage</Link>
-      </section>
+      {editableAreas &&
+        editableAreas.map(area => (
+          <EditableArea key={area.identifier} area={area} />
+        ))}
+      <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
 }
