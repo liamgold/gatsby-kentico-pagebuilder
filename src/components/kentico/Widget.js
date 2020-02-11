@@ -29,8 +29,7 @@ const Widget = ({ widget }) => {
     default:
       return (
         <div>
-          WARNING: widget has not been created in Gatsby -{" "}
-          {widget.variants[0].identifier}}
+          WARNING: widget has not been created in Gatsby - {widget.type}
         </div>
       )
   }
